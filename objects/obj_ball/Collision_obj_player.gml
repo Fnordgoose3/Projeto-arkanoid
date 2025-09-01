@@ -1,0 +1,4 @@
+
+if(ejected == true){
+move_bounce_all(true);
+}
