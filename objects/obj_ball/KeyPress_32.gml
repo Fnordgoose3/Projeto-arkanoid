@@ -1,5 +1,5 @@
 if(ejected == false){
-speed = 10;
+speed = speed_ball;
 direction = 90;
 ejected = true;
 }

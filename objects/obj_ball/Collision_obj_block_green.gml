@@ -1,2 +1,2 @@
-move_bounce_all(true);
-instance_destroy(other);
+scr_colisao_blocos();
+scr_sorteio_powerup();
