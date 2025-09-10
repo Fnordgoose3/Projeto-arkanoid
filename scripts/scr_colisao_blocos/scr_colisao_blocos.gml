@@ -22,6 +22,7 @@ function scr_sorteio_powerup(){
 
 	if (sorteio == 9){
 		instance_create_layer(x,y,"items", obj_item_powerup);
+		audio_play_sound(snd_item_powerup,10,false);
 	}
 
 }
