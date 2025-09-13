@@ -18,11 +18,15 @@ function scr_colisao_blocos(){
 function scr_sorteio_powerup(){
 
 	randomise();
-	var sorteio = irandom(9);
-
-	if (sorteio == 9){
-		instance_create_layer(x,y,"items", obj_item_powerup);
-		audio_play_sound(snd_item_powerup,10,false);
+	
+	var sorteio_item1 = irandom_range(1,10);
+	var sorteio_item2 = irandom_range(1,20);
+	
+	if(sorteio_item1 == 1){
+		instance_create_layer(x,y,"instances", obj_item_powerup);
+		audio_play_sound(snd_item_powerup, 10, false);
+	}else if (sorteio_item2 == 1){
+		instance_create_layer(x,y,"instances", obj_item_powerup_down);
+		audio_play_sound(snd_item_powerup, 10, false);
 	}
-
 }

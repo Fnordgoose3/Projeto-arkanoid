@@ -1,4 +1,4 @@
-
+rebate_count_wall = 0;
 global.vidas--;
 
 if(global.vidas < 1){
